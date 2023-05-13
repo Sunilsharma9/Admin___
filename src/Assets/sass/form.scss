@@ -1,0 +1,43 @@
+// .form{ 
+//     padding: 30px;
+//     border-radius: 12px;
+//         font-family: ui-serif;
+        
+// }
+
+
+.admin{
+    display: flex;
+    justify-content: space-between;
+    font-family: ui-serif;
+    form{
+        width: 50%;
+        padding: 0 10px;
+        input{
+            &:focus{
+                box-shadow: none;
+            }
+        }
+        .form-select{
+            margin-top: 14px;
+            &:focus{
+                box-shadow: none;
+            }
+        }
+
+        .custom-btn{
+            background: $blue;
+            margin-top: 20px;
+            color: $white;
+            font-size: 15px;
+            border-radius: 5px;
+        }
+        @media($breckpoint_LG){
+            width: 100%;
+        }
+    }
+
+    @media($breckpoint_LG){
+        flex-direction:column;
+    }
+}

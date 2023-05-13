@@ -1,0 +1,167 @@
+.card{
+    padding: 20px;
+    border:none;
+    background: none;  
+
+    .row{
+        .first_column{
+        background: $white;
+        color: $white;
+        padding: 24px 20px;
+        //  display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        
+        
+        .title{
+            margin-top: 15px;
+            h2{
+                margin-bottom: 2px;
+                margin-top: 6px;
+                font-size: 16px;
+                color: $white;
+            }
+        }
+        .image{
+            .work{
+                font-size: 54px;
+                opacity: 0.9;
+                transition: all 0.4s linear;
+                padding: 12px;
+                background-color: $icon_back;
+                color: $white;
+                border-radius: 10px;
+            }
+        }
+
+        &:hover{
+            .image{
+                .work{
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+       
+    }
+    
+    .first_col{
+        color: $black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .left_content{
+            background: $primary;
+            border-radius: 15px;
+            padding: 15px 15px;
+
+            .main_balance{
+                display: flex;
+                h3{
+                    font-size: 14px;
+                    color: $white;
+                }
+                h4{
+                    font-size: 14px;
+                    color: $white;
+                }
+              
+            }
+            .valid{
+                display: flex;
+                justify-content: space-between;
+                .thru{
+                    width: 70px;
+                    p{
+                        color: $white;
+                        margin: 0;
+                        font-size: 11px;
+                    }
+                }
+                .holder{
+                    margin-left: 25px;
+                    p{
+                        color: $white;
+                        margin: 0;
+                        font-size: 11px;
+                    }
+                    h3{
+                        color: $white;
+                        margin: 0;
+                        font-size: 12px;
+                    }
+                }
+            }
+            @media($breckpoint_XL){
+                width: 100%
+            };
+                
+
+        }
+        .right-content{
+            margin-left: 36px;
+            .bank{
+                display: flex;
+                .card-name{
+                    p{
+                        margin: 0;
+                        color: $grey;
+                        font-size: 15px;
+                    }
+                    h4{
+                        font-size: 15px;
+                    }
+                }
+                .bank-name{
+                    margin-left: 47px;
+                    p{
+                        color: $grey;
+                        margin: 0;
+                    }
+                    h4{
+                        font-size: 15px;
+                    }
+
+                    @media($breckpoint_MD){
+                     margin: 0;
+                    }
+                }
+                @media($breckpoint_MD){
+                    justify-content: space-between;
+                }
+            }
+            .card-number{
+                margin-top: 10px;
+                h4{
+                    font-size: 16px;
+                    margin: 0;
+                }
+            }
+            @media($breckpoint_XL){
+                width: 100%;
+                margin: 0;
+                margin-top: 14px;
+            };
+        }
+        @media($breckpoint_XL){
+            flex-direction: column;
+            align-items: start;
+        }
+    }
+    .second_col{
+        border: none;
+        background: $light_green;
+    }
+    .third_col{
+        border: none;
+        background: $pink;
+        .image{
+            .work{
+                background: $pink_back;
+            }
+        }
+    }
+
+}
+}

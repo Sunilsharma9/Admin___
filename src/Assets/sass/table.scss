@@ -1,0 +1,97 @@
+.price_table{
+    padding: 10px 20px;
+    background:$white;
+    margin: 0 10px;
+    border-radius: 10px;
+    .data{
+    table{
+        width: 100%;
+        thead{
+            tr{
+                border-bottom: 1px solid $light_grey;
+                margin-bottom: 10px;
+                th{
+                    padding: 10px 20px;
+                    font-size: 17px;
+
+                }
+            }
+        }
+
+        .table-body{
+          padding-bottom: 10px !important;
+            .table_row{
+                    border-bottom: 1px solid $light_grey;
+                    padding-bottom: 10px !important;
+                td{
+                    padding: 10px 20px;
+                    font-size: 13px;
+                   
+                    .customer{
+                        display: flex;
+                        // padding: 2px 15px;
+                        align-items: center;
+                        .image{
+                            height: 30px;
+                            margin-right: 10px;
+                            img{
+                                height: 100%;
+                                width: 100%;
+                                border-radius: 50%
+                            }
+                          
+                        }
+                        p{
+                            margin-bottom: 0px !important;
+                        }
+                    }
+
+                    .edit{
+                        border: none;
+                        border-radius: 6px;
+                        padding: 6px 17px;
+                        background: $blue;
+                        color: $white;
+                    }
+                }
+            }
+        }
+
+        @media($breckpoint_LG){
+            width: 700px;
+        }
+      
+    }
+    @media($breckpoint_LG){
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+}
+    .for_input{
+        .searching{
+            input{
+                background: $light_grey;
+                
+            }
+        }
+    
+    }
+
+
+}
+
+
+.page{
+    margin-top: 15px;
+    .pagination{
+        display: flex;
+        justify-content: center;
+        .page-item{
+            .page-link{
+                &:focus{
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}

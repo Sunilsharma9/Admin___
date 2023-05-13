@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import './common.scss';
+
+@import './dashboard.scss';
+
+
+@import './card.scss';
+
+@import './table.scss';
+
+@import './form.scss';
+body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+     height: 100vh;
+     background-color: red;
+}
