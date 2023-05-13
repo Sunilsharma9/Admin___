@@ -1,8 +1,7 @@
 .main{
     width: 100%;
     padding: 100px 20px 50px 220px;
-    height: 100vh;
-    background: $light_grey;
+     background: $light_grey;
     transition: all 0.2s linear;
     @media($breckpoint_MD){
         padding: 100px 20px 50px 21px;
@@ -10,7 +9,14 @@
     .card{
         background: none;
         border: none;
-        padding: 20px 0;
+        padding: 20px 10px;
+        .row{
+            display: flex;
+            margin: auto;
+            width: 100%;
+        }
+
+
     }
     h1{
         font-size: 25px;
@@ -152,9 +158,10 @@
     top: 0;
     padding: 0px;
     background-color:$white;
-     height: 100vh;
     z-index: 2;
     box-shadow: 4px 10px 10px -12px $black;
+    transition: all 0.3s linear;
+    height: 100vh;
     .clear_button{
         float: right;
         background: none;
@@ -238,6 +245,7 @@
     @media($breckpoint_340){
         width: 50% !important;
 }
+    
 }
 
 
