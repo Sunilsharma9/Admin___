@@ -33,9 +33,9 @@ const Sidebar = () => {
     </div>
 
     <ListGroup>
-      <ListGroup.Item><HomeIcon className="home"/><Link to="/">Home</Link></ListGroup.Item>
-      <ListGroup.Item><InsertDriveFileIcon className="home"/><Link to="/form">Form</Link></ListGroup.Item>
-      <ListGroup.Item><CalendarViewMonthIcon className="home"/><Link to="/table">Tables</Link></ListGroup.Item>
+      <Link to="/"><HomeIcon className="home"/><span> Home</span></Link>
+      <Link to="/form"> <InsertDriveFileIcon className="home"/> <span>Form</span></Link>
+      <Link to="/table"><CalendarViewMonthIcon className="home"/> <span>Tables </span></Link>
       {/* <ListGroup.Item><CalendarViewMonthIcon className="home"/><Link to="/">Calender</Link></ListGroup.Item>
       <ListGroup.Item><CalendarViewMonthIcon className="home"/><Link to="/">Email</Link></ListGroup.Item>
       <ListGroup.Item><CalendarViewMonthIcon className="home"/><Link to="/">Invoices</Link></ListGroup.Item>

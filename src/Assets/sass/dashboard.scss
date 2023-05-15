@@ -2,14 +2,16 @@
     width: 100%;
     padding: 100px 20px 50px 220px;
      background: $light_grey;
-    transition: all 0.2s linear;
+    transition: all 0.3s linear;
     height: 100vh;
     @media($breckpoint_MD){
         padding: 100px 20px 50px 21px;
     }
     @media($breckpoint_LG){
         height: 100%;
-    }
+
+        }
+
 
     .card{
         background: none;
@@ -111,7 +113,7 @@
         align-items: center;
         background-color:$white;
         padding-left: 204px !important;
-        transition: all 0.2s linear;
+        transition: all 0.3s linear;
         @media($breckpoint_MD){
             padding-left: 10px !important;
         }
@@ -167,6 +169,7 @@
     box-shadow: 4px 10px 10px -12px $black;
     transition: all 0.3s linear;
     height: 100vh;
+    overflow: hidden;
     .clear_button{
         float: right;
         background: none;
@@ -185,13 +188,13 @@
         padding: 30px 21px;
         .window{    
             color: $blue;
-            font-size: 25px;
+            font-size: 19px;
             margin-right: 4px;
         }
         p{
             color: $black;
             margin: 0;
-            font-size: 27px;
+            font-size: 17px;
             font-weight: 700;
             @media($breckpoint_SM_500){
                 font-size: 17px;
@@ -201,41 +204,37 @@
     .list-group{
         padding: 10px 12px;
          
-        .list-group-item{
-          padding: 8px 14px;
-          display: flex;
-          align-items: center;
-          margin-bottom: 8px;
-          border: none;
-          border-radius: 6px;
-          background: none;
-          
+        
             a{
                 text-decoration: none;
                 font-size: 16px;
                 padding-left: 8px;
                 color: $grey;
                  font-weight: 400;
-                
-            }
-            .home{
-                font-size: 19px;
-                color: $grey;
-                 
-                
-            }
-            &:hover{
-                background: $blue;
-                a{
-                    color: $white;
-
+                 padding: 10px 20px; 
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                span{
+                    margin-left: 4px;
                 }
                 .home{
-                    color: $white;
+                    font-size: 17px;
                 }
+                &:hover{
+                    background: $blue;
+                    color: $white;
+                    .home{
+                        color: $white;
+                         
+                        
+                    }
+                }             
             }
+           
          
-        }
+         
+        
     }
     @media($breckpoint_MD){
         position: absolute;
@@ -279,7 +278,7 @@
         }
       
         .logo{
-            padding: 30px 14px;
+            padding: 37px 11px;
             p{
                 display: none;
                 @media($breckpoint_MD){
@@ -287,15 +286,24 @@
                 }
             }
         }
-        .list-group-item{
-            padding: 8px 12px;
+        .list-group{
+            padding: 8px 6px;
             a{
-                display: none;
-
-
-                @media($breckpoint_MD){
+                padding: 10px 13px;
+                
+                span{
+                   display: none;
+                   @media($breckpoint_MD){
                     display: block;
+                   }
                 }
+               @media($breckpoint_LG){
+                padding: 10px 8px;
+               }
+                
+               @media($breckpoint_XL){
+                padding: 10px 8px;
+               }
                 
             }
 
@@ -304,7 +312,7 @@
         .menu{
             width: 100%;
             .menu-bar{
-                padding-left: 52px !important;
+                padding-left: 66px !important;
                 @media($breckpoint_MD){
                     padding-left: 10px !important;;
                 }
@@ -317,6 +325,7 @@
                 @media($breckpoint_MD){
                     padding-left: 0px;
                 }
+
             }
         
         
