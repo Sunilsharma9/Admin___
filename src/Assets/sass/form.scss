@@ -12,21 +12,37 @@
     font-family: ui-serif;
     form{
         width: 50%;
-        padding: 0 10px;
+        padding: 30px 15px;
+        color: $white;
+        background: $sidebar;
+        border-radius: 4px;
+        label{
+            margin-top: 10px;
+        }
         input{
+            background: $main_back;
+            margin-top: 2px;
+            border: 1px solid $grey;
             &:focus{
                 box-shadow: none;
+                background: none;
+                color: $white;
+                border: 1px solid $grey;
             }
         }
         .form-select{
-            margin-top: 14px;
+            margin-top: 19px;
+            background: $main_back;
+            color: $white;
             &:focus{
                 box-shadow: none;
+                border: 1px solid $grey;
             }
+        
         }
 
         .custom-btn{
-            background: $blue;
+            background: $main_back;
             margin-top: 20px;
             color: $white;
             font-size: 15px;

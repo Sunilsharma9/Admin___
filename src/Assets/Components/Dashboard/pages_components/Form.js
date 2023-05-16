@@ -3,8 +3,14 @@ import SearchIcon from "@mui/icons-material/Search";
 import Form from "react-bootstrap/Form";
 
 const add = () => {
+  function Clear_button() {
+    document.body.classList.remove('changeStyle');
+  }
+   
   return (
-    <section className="main">
+    <section className="main"  onClick={() => {
+      Clear_button();
+    }}>
       <div className="for_input">
         <h1>Form</h1>
         

@@ -3,15 +3,15 @@ $black:black;
 $light_grey:#efefef;
 $dashboard:#003032;
 $grey:grey;
-$green:#00806f;
 $primary:#784fed;
 $light:#141618;
-$light_green:#60c696;
 $dark_blue:#302F4D;
-$blue:blue;
-$icon_back:#8dd7b4;
-$pink:#f34f81;
-$pink_back:#f882a5;
+$blue:white;
+$icon_back:#626262;
+$main_back:#252525;
+$pink_back:#626262;
+$card_back:#404040;
+$sidebar:#141111;
 
 $breakpoint_xxl: 'max-width:1700px';
 $breckpoint_XXL: 'max-width: 1400px';
@@ -37,7 +37,7 @@ $breckpoint_340: 'max-width: 355px';
 
 
 ::-webkit-scrollbar-thumb {
-    background-color:blue;;    
+    background-color:white;;    
     border-radius: 20px;       
     
   }

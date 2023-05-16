@@ -1,6 +1,6 @@
 .price_table{
     padding: 10px 20px;
-    background:$white;
+    background:$sidebar;
     margin: 0 10px;
     border-radius: 10px;
     .data{
@@ -13,6 +13,7 @@
                 th{
                     padding: 10px 20px;
                     font-size: 17px;
+                    color: $white;
 
                 }
             }
@@ -26,6 +27,7 @@
                 td{
                     padding: 10px 20px;
                     font-size: 13px;
+                    color: $white;
                    
                     .customer{
                         display: flex;
@@ -50,7 +52,7 @@
                         border: none;
                         border-radius: 6px;
                         padding: 6px 17px;
-                        background: $blue;
+                        background: $sidebar;
                         color: $white;
                     }
                 }
@@ -68,10 +70,40 @@
     }
 }
     .for_input{
+        h1{
+            color: $white   ;
+        }
+        .page{
+            display: flex;
+            .form-select{
+                width: 26%;
+                background: $main_back;
+                color: $white;
+                border: none;
+                margin-right: 10px;
+                &:focus{
+                    box-shadow: none;
+                }
+                @media($breckpoint_ESM){
+                    width: 35%;
+                }
+            }
+
+            @media($breckpoint_SM){
+                width: 100%;
+            }
+        }
         .searching{
+           
+            .search{
+                color: $white;
+            }
             input{
-                background: $light_grey;
-                
+                background: $main_back;
+                color: $white;
+                &::placeholder{
+                    color: $white;
+                }
             }
         }
     
@@ -88,9 +120,20 @@
         justify-content: center;
         .page-item{
             .page-link{
+                background: $sidebar;
+                color: $white;
+                border: 1px solid $grey;
                 &:focus{
                     box-shadow: none;
                 }
+              
+
+            }
+        
+        }
+        .active{
+            .page-link{
+                border: 1px solid $white;
             }
         }
     }

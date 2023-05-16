@@ -1,22 +1,24 @@
+body{
+    background-color: $main_back !important;
+}
+
+
 .main{
     width: 100%;
     padding: 100px 20px 50px 220px;
-     background: $light_grey;
+     background: $main_back;
     transition: all 0.3s linear;
-    height: 100vh;
+    // height: 100vh;
     @media($breckpoint_MD){
         padding: 100px 20px 50px 21px;
     }
-    @media($breckpoint_LG){
-        height: 100%;
-
-        }
+     
 
 
     .card{
         background: none;
         border: none;
-        padding: 20px 10px;
+        padding: 20px 3px;
         .row{
             display: flex;
             margin: auto;
@@ -27,6 +29,7 @@
     }
     h1{
         font-size: 25px;
+        color: $white;
     }
     .for_input{
         display: flex;
@@ -39,9 +42,8 @@
             left: 8px;
             top: 15px;    
             font-size: 20px;
-            @media($breckpoint_SM_500){
-                top: 25px;    
-            }
+            color: $white;
+            
             
         }
         .searching{
@@ -55,16 +57,15 @@
             border-radius: 10px;
             border: none;
             padding-left: 29px;
-            background:$white;
+            background:$sidebar;
+            color: $white;
           
 
             &:focus{
                 border: none;
                 outline: none;
             }
-            @media($breckpoint_SM_500){
-                margin-top: 10px;
-            }
+         
             @media($breckpoint_SM){
                 width: 100%;
             }
@@ -111,7 +112,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color:$white;
+        background-color:$sidebar;
         padding-left: 204px !important;
         transition: all 0.3s linear;
         @media($breckpoint_MD){
@@ -125,7 +126,7 @@
         button{
             background: none;
             border: none;
-            color: $black;
+            color: $white;
             .toggle_icon{
                 font-size: 30px;
             }
@@ -142,15 +143,15 @@
                 h3{
                     margin: 0;
                     font-size: 13px;
+                    color: $white;
                 }
                 p{
                     margin: 0;
                     font-size: 10px;
+                    color: $white;
                 }
             }
-            @media($breckpoint_SM_500){
-                margin-top: 15px;
-            }
+             
         }
       
     }
@@ -164,7 +165,7 @@
     left: 0;
     top: 0;
     padding: 0px;
-    background-color:$white;
+    background-color:$sidebar;
     z-index: 2;
     box-shadow: 4px 10px 10px -12px $black;
     transition: all 0.3s linear;
@@ -187,12 +188,12 @@
         align-items: center;
         padding: 30px 21px;
         .window{    
-            color: $blue;
+            color: $white;
             font-size: 19px;
             margin-right: 4px;
         }
         p{
-            color: $black;
+            color: $white;
             margin: 0;
             font-size: 17px;
             font-weight: 700;
@@ -209,12 +210,13 @@
                 text-decoration: none;
                 font-size: 16px;
                 padding-left: 8px;
-                color: $grey;
+                color: $white;
                  font-weight: 400;
                  padding: 10px 20px; 
                 border-radius: 10px;
                 display: flex;
                 align-items: center;
+                margin-bottom: 4px;
                 span{
                     margin-left: 4px;
                 }
@@ -223,15 +225,22 @@
                 }
                 &:hover{
                     background: $blue;
-                    color: $white;
+                    color: $black;
                     .home{
-                        color: $white;
+                        color: $black;
                          
                         
                     }
-                }             
+                }  
+             
+              
+
             }
            
+            .activeLink{
+                background:$white;
+                color: $black;
+            }
          
          
         
@@ -278,7 +287,7 @@
         }
       
         .logo{
-            padding: 37px 11px;
+            padding: 30px 21px;
             p{
                 display: none;
                 @media($breckpoint_MD){
@@ -330,4 +339,10 @@
         
         
 }
+
+
+ 
+
+
+
 

@@ -5,7 +5,7 @@
 
     .row{
         .first_column{
-        background: $white;
+        background: $sidebar;
         color: $white;
         padding: 24px 20px;
         //  display: flex;
@@ -52,7 +52,7 @@
         justify-content: space-between;
         align-items: center;
         .left_content{
-            background: $primary;
+            background: $main_back;
             border-radius: 15px;
             padding: 15px 15px;
 
@@ -61,6 +61,7 @@
                 h3{
                     font-size: 14px;
                     color: $white;
+
                 }
                 h4{
                     font-size: 14px;
@@ -106,21 +107,23 @@
                 .card-name{
                     p{
                         margin: 0;
-                        color: $grey;
+                        color: $white;
                         font-size: 15px;
                     }
                     h4{
                         font-size: 15px;
+                        color: $white;
                     }
                 }
                 .bank-name{
                     margin-left: 47px;
                     p{
-                        color: $grey;
+                        color: $white;
                         margin: 0;
                     }
                     h4{
                         font-size: 15px;
+                        color: $white;
                     }
 
                     @media($breckpoint_MD){
@@ -136,6 +139,10 @@
                 h4{
                     font-size: 16px;
                     margin: 0;
+                    color: $white;
+                }
+                p{
+                    color: $white;
                 }
             }
             @media($breckpoint_XL){
@@ -151,11 +158,11 @@
     }
     .second_col{
         border: none;
-        background: $light_green;
+        background: $sidebar;
     }
     .third_col{
         border: none;
-        background: $pink;
+        background: $sidebar;
         .image{
             .work{
                 background: $pink_back;

@@ -2,6 +2,7 @@ import React from "react";
 import pic from "../../../images/customer.jpeg";
 import SearchIcon from "@mui/icons-material/Search";
 import Pagination from "react-bootstrap/Pagination";
+import Form from "react-bootstrap/Form";
 
 const Table = () => {
   let active = 2;
@@ -13,15 +14,30 @@ const Table = () => {
       </Pagination.Item>
     );
   }
+  function Clear_button() {
+    document.body.classList.remove('changeStyle');
+  }
+   
   return (
-    <section className="main">
+    <section className="main" onClick={() => {
+      Clear_button();
+    }}>
       <div className="price_table">
         <div className="for_input">
           <h1>Table</h1>
+        <div className="page">
+          <Form.Select aria-label="Default select example">
+            <option>No.</option>
+            <option value="1">1</option>
+            <option value="2">3</option>
+            <option value="3">3</option>
+          </Form.Select>
           <div className="searching">
             <SearchIcon className="search" />
+           
             <input type="search" placeholder="Search" />
           </div>
+        </div>
         </div>
 
          <div className="data">   
@@ -57,7 +73,7 @@ const Table = () => {
               <td>$10.00</td>
 
               <td>
-                <button type="button" className="edit">
+                <button type="custom-btn btn-15" className="edit">
                   Edit
                 </button>
               </td>
@@ -89,12 +105,15 @@ const Table = () => {
             </tr>
           </tbody>
         </table>
+
+
+        <div className="page">
+        <Pagination size="sm">{items}</Pagination>
+      </div>
         </div>
       </div>
 
-      {/* <div className="page">
-        <Pagination size="sm">{items}</Pagination>
-      </div> */}
+     
     </section>
   );
 };
