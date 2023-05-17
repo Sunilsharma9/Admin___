@@ -1,0 +1,73 @@
+.foot{
+
+
+    padding-left: 204px;
+    width: 100%;
+    transition: all 0.3s linear;
+    position: fixed;
+    bottom: 0;
+    z-index: 99999;
+    @media($breckpoint_MD){
+        padding-left: 0;
+    }
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background: $sidebar;
+    align-items: center;
+    padding: 20px 17px;
+    @media($breckpoint_SM_500){
+        flex-direction: column;
+    }
+    .term{
+        display: flex;
+        align-items: center;
+        padding: 0 16px;
+        p{
+            margin-bottom: 0px;
+            color: $white;
+            padding-right: 20px;
+            @media($breckpoint_SM_500){
+                padding-right: 5px;
+            }
+            
+        }
+        a{
+            color: $white;
+            transition: all 0.4s linear;
+            padding: 0 9px;
+            text-decoration: none;
+            &:hover{
+                color: $grey;
+            }
+        }
+    }
+
+    .icon{
+        margin-right: 20px;
+        @media($breckpoint_SM_500){
+            margin-top: 20px;
+        }
+        .face{
+            color: $white;
+            margin: 0 4px;
+            transition: all 0.4s linear;
+            cursor: pointer;
+            &:hover{
+                color: $grey;
+            }
+        }
+    }
+}
+
+}
+
+
+.changeStyle{
+    .foot{
+        padding-left: 44px;
+        @media($breckpoint_MD){
+            padding: 0;
+        }
+    }
+}

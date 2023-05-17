@@ -10,6 +10,7 @@
     display: flex;
     justify-content: space-between;
     font-family: ui-serif;
+    padding: 9px;
     form{
         width: 50%;
         padding: 30px 15px;
@@ -31,9 +32,10 @@
             }
         }
         .form-select{
-            margin-top: 19px;
+            margin-top: 6px;
             background: $main_back;
             color: $white;
+            padding: 2px 8px;
             &:focus{
                 box-shadow: none;
                 border: 1px solid $grey;
@@ -55,5 +57,10 @@
 
     @media($breckpoint_LG){
         flex-direction:column;
+        margin-bottom: 50px;
     }
+}
+
+.for_padding{
+    padding-bottom: 100px;
 }

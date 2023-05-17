@@ -8,7 +8,8 @@ body{
     padding: 100px 20px 50px 220px;
      background: $main_back;
     transition: all 0.3s linear;
-    // height: 100vh;
+    height: auto;
+    margin-bottom: 30px;
     @media($breckpoint_MD){
         padding: 100px 20px 50px 21px;
     }
@@ -23,6 +24,7 @@ body{
             display: flex;
             margin: auto;
             width: 100%;
+            margin-bottom: 30px;
         }
 
 
@@ -187,6 +189,9 @@ body{
         display: flex;
         align-items: center;
         padding: 30px 21px;
+        @media($breckpoint_MD){
+            padding: 33px 31px;
+        }
         .window{    
             color: $white;
             font-size: 19px;
@@ -216,7 +221,7 @@ body{
                 border-radius: 10px;
                 display: flex;
                 align-items: center;
-                margin-bottom: 4px;
+               
                 span{
                     margin-left: 4px;
                 }
@@ -287,7 +292,7 @@ body{
         }
       
         .logo{
-            padding: 30px 21px;
+            padding: 33px 21px;
             p{
                 display: none;
                 @media($breckpoint_MD){
@@ -296,9 +301,9 @@ body{
             }
         }
         .list-group{
-            padding: 8px 6px;
+            padding: 12px 6px;
             a{
-                padding: 10px 13px;
+                padding: 12px 11px;
                 
                 span{
                    display: none;
