@@ -6,11 +6,17 @@ import Header from "./Header";
 import pic from '../../images/customer.jpeg'
 import Card from "./pages_components/Card";
 import SearchIcon from '@mui/icons-material/Search';
+
+
+
 const Dashboard = () => {
+
+
   function Clear_button() {
     document.body.classList.remove('changeStyle');
   }
    
+  
   return (
     <section className="main" onClick={() => {
       Clear_button();
