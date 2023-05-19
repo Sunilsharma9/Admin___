@@ -12,6 +12,7 @@
         align-items: center;
         margin-bottom: 10px;
         border-radius: 5px;
+        height: 100%;
         
         
         .title{
@@ -155,14 +156,25 @@
             flex-direction: column;
             align-items: start;
         }
+        @media($breckpoint_LG){
+            margin-top: 10px;
+        }
     }
     .second_col{
         border: none;
         background: $sidebar;
+        height: 100%;
+        @media($breckpoint_LG){
+            margin-top: 10px;
+        }
     }
     .third_col{
         border: none;
         background: $sidebar;
+        height: 100%;
+        @media($breckpoint_LG){
+            margin-top: 10px;
+        }
         .image{
             .work{
                 background: $pink_back;
@@ -170,5 +182,9 @@
         }
     }
 
+
+    @media($breckpoint_MD){
+        gap: 10px;
+    }
 }
 }

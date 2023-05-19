@@ -1,6 +1,6 @@
 import React from 'react'
 import ReorderIcon from '@mui/icons-material/Reorder';
-import pic from '../../images/customer.jpeg';
+import pic from '../../Assets/images/customer.jpeg';
 
 const Header = () => {
     function myStyle() {

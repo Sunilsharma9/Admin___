@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../../images/logo.png'
+import logo from '../../Assets/config/logo.png'
 import ClearIcon from '@mui/icons-material/Clear';
 import HomeIcon from '@mui/icons-material/Home';
 import InsertDriveFileIcon from '@mui/icons-material/InsertDriveFile';
@@ -39,11 +39,6 @@ const Sidebar = () => {
       <Link to="/" className={location.pathname === '/' ? "nav-link activeLink" : ' nav-link'}><HomeIcon className="home"/><span> Home</span></Link>
       <Link to="/form" className={location.pathname === '/form' ? "nav-link activeLink" : ' nav-link'}> <InsertDriveFileIcon className="home"/> <span>Form</span></Link>
       <Link to="/table" className={location.pathname === '/table' ? "nav-link activeLink" : ' nav-link'}><CalendarViewMonthIcon className="home"/> <span>Tables </span></Link>
-      {/* <ListGroup.Item><CalendarViewMonthIcon className="home"/><Link to="/">Calender</Link></ListGroup.Item>
-      <ListGroup.Item><CalendarViewMonthIcon className="home"/><Link to="/">Email</Link></ListGroup.Item>
-      <ListGroup.Item><CalendarViewMonthIcon className="home"/><Link to="/">Invoices</Link></ListGroup.Item>
-      <ListGroup.Item><CalendarViewMonthIcon className="home"/><Link to="/">Contacts</Link></ListGroup.Item>
-      <ListGroup.Item><CalendarViewMonthIcon className="home"/><Link to="/">Icons</Link></ListGroup.Item> */}
       
       
     </ListGroup>

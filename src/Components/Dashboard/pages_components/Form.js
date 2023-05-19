@@ -8,7 +8,7 @@ const add = () => {
   }
    
   return (
-    <section className="main"  onClick={() => {
+    <section className="main for_padding"   onClick={() => {
       Clear_button();
     }}>
       <div className="for_input">
@@ -30,6 +30,8 @@ const add = () => {
           <label>Address</label>
           <br />
           <input className="form-control" type="text" />
+          <label>Messages</label>
+          
           <Form.Select aria-label="Default select example">
             <option>Open this select menu</option>
             <option value="1">Number</option>

@@ -1,5 +1,5 @@
 import React from "react";
-import pic from "../../../images/customer.jpeg";
+import pic from "../../../Assets/images/customer.jpeg";
 import SearchIcon from "@mui/icons-material/Search";
 import Pagination from "react-bootstrap/Pagination";
 import Form from "react-bootstrap/Form";
