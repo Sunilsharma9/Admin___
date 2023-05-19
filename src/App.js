@@ -18,7 +18,9 @@ function App() {
           <Header/>
           <Sidebar/>
           <Outlet/>
-          <Footer/>
+          
+            <Footer/>
+          
           
       </>
       
