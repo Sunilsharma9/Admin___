@@ -208,9 +208,7 @@ body{
         }
     }
     .list-group{
-        padding: 10px 12px;
          
-        
             a{
                 text-decoration: none;
                 font-size: 16px;
@@ -301,9 +299,9 @@ body{
             }
         }
         .list-group{
-            padding: 12px 6px;
+           
             a{
-                padding: 12px 11px;
+                display: block;
                 
                 span{
                    display: none;
@@ -319,6 +317,10 @@ body{
                 padding: 10px 8px;
                }
                 
+            }
+            .home{
+                position: relative;
+                top: -2px;
             }
 
         }
